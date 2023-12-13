@@ -80,7 +80,7 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                             containerColor = Color(0xFFD8FDFF)
                         )
                     ) {
-                        Image(painter = painterResource(R.drawable.house) , "" , modifier = Modifier.height(200.dp).fillMaxWidth())
+                        Image(painter = painterResource(R.drawable.house) , "" , modifier = Modifier.height(180.dp).fillMaxWidth() , contentScale = ContentScale.Crop)
                         Text("Building", color = Color.Black)
                     }
 
@@ -90,18 +90,7 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                             containerColor = Color(0xFFD8FDFF)
                         )
                     ) {
-                        AsyncImage(
-                            model = ImageRequest
-                                .Builder(LocalContext.current)
-                                .data("it.apart_img")//"https://images.pexels.com/photos/5727885/pexels-photo-5727885.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                .crossfade(true)
-                                .build(),
-                            contentDescription = null,
-                            modifier = Modifier
-                                .height(150.dp)
-                                .fillMaxWidth(),
-                            contentScale = ContentScale.Crop,
-                        )
+                        Image(painter = painterResource(R.drawable.house) , "" , modifier = Modifier.height(180.dp).fillMaxWidth() , contentScale = ContentScale.Crop)
                         Text("Building", color = Color.Black)
                     }
                 }
@@ -112,18 +101,7 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                             containerColor = Color(0xFFD8FDFF)
                         )
                     ) {
-                        AsyncImage(
-                            model = ImageRequest
-                                .Builder(LocalContext.current)
-                                .data("it.apart_img")//"https://images.pexels.com/photos/5727885/pexels-photo-5727885.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                .crossfade(true)
-                                .build(),
-                            contentDescription = null,
-                            modifier = Modifier
-                                .height(150.dp)
-                                .fillMaxWidth(),
-                            contentScale = ContentScale.Crop,
-                        )
+                        Image(painter = painterResource(R.drawable.house) , "" , modifier = Modifier.height(180.dp).fillMaxWidth() , contentScale = ContentScale.Crop)
                         Text("Building", color = Color.Black)
                     }
 
@@ -133,18 +111,7 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                             containerColor = Color(0xFFD8FDFF)
                         )
                     ) {
-                        AsyncImage(
-                            model = ImageRequest
-                                .Builder(LocalContext.current)
-                                .data("it.apart_img")//"https://images.pexels.com/photos/5727885/pexels-photo-5727885.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                .crossfade(true)
-                                .build(),
-                            contentDescription = null,
-                            modifier = Modifier
-                                .height(150.dp)
-                                .fillMaxWidth(),
-                            contentScale = ContentScale.Crop,
-                        )
+                        Image(painter = painterResource(R.drawable.house) , "" , modifier = Modifier.height(180.dp).fillMaxWidth() , contentScale = ContentScale.Crop)
                         Text("Building", color = Color.Black)
                     }
                 }
