@@ -11,6 +11,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -60,7 +61,7 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                     colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                     modifier = Modifier.padding(top = 10.dp, start = 60.dp)
                 ) {
-                    Text("3d Apprt")
+                    Text("3d model" , color = Color.Black)
                 }
             }
 
@@ -71,7 +72,10 @@ fun MyProject(navController: NavController, viewModel: NavigationViewMode){
                     .padding(vertical = 16.dp),
             )
         }
-        LazyColumn {
+        LazyColumn(
+            verticalArrangement = Arrangement.Center ,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             item {
                 Row {
                     Card(

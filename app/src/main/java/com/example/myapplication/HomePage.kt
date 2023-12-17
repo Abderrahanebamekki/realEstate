@@ -67,7 +67,6 @@ fun HomePage(navController: NavController , viewModel: NavigationViewMode, conte
                     sharingSystem.openFilePicker()
                     val intent = Intent(context,MainActivity::class.java)
                     intent.putExtra("something",1)
-                   context.startActivity(intent)
                 }
             }
         }
